@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(75, 75, 75);
+  color: whitesmoke;
+}
+
+button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: lightblue;
+  border: lightblue 0;
+  margin: 4px;
+}
+
+button:hover,
+button:focus {
+  background: lightblue;
+}
+
+button:focus {
+  outline: 0px solid #fff;
+}
+
+button:active {
+  transform: scale(0.99);
+}
