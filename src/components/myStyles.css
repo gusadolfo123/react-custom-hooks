@@ -25,3 +25,7 @@ button:focus {
 button:active {
   transform: scale(0.99);
 }
+
+p {
+  padding: 6px;
+}

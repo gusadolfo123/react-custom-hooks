@@ -8,8 +8,10 @@ import { CounterWithCustomHook } from "./components/CounterWithCustomHook";
 import { SimpleForm } from "./components/useEffect/SimpleForm";
 import { FormWithCustomHook } from "./components/useEffect/FormWithCustomHook";
 import { MultipleCustomHooks } from "./components/MultipleCustomHooks";
+import { FocusScreen } from "./components/FocusScreen";
+import { RealExampleRef } from "./components/RealExampleRef";
+import { Layout } from "./components/Layout.js";
+import { Memorize } from "./components/Memorize";
+import { MemoHook } from "./components/MemoHook";
 
-ReactDOM.render(
-  <MultipleCustomHooks title="Formulario" />,
-  document.getElementById("root")
-);
+ReactDOM.render(<MemoHook />, document.getElementById("root"));
