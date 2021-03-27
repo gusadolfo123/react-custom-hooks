@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
+import { procesoPesado } from "../helpers/procesoPesado";
 import { useCounter } from "../hooks/useCounter";
 import { Small } from "./Small";
 
 export const MemoHook = () => {
-  const { state, increment } = useCounter(10);
-
+  const { state, increment } = useCounter(1000);
   const [show, setShow] = useState(true);
+  const memoProcesoPesado = useMemo(() => procesoPesado(state), [state]);
 
   return (
     <div>
@@ -13,6 +14,9 @@ export const MemoHook = () => {
       <p>
         Counter: <Small value={state} />
       </p>
+
+      <p>{ memoProcesoPesado }</p>
+
       <button
         onClick={() => {
           increment(1);
