@@ -3,6 +3,6 @@ import ReactDOM from "react-dom";
 
 import "./components/myStyles.css";
 import "./index.css";
-import { Padre } from "./components/Padre";
+import { TODOApp } from "./components/TODOApp.jsx";
 
-ReactDOM.render(<Padre />, document.getElementById("root"));
+ReactDOM.render(<TODOApp />, document.getElementById("root"));

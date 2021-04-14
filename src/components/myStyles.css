@@ -10,7 +10,7 @@ button {
   padding-right: 40px;
   background-color: lightblue;
   border: lightblue 0;
-  margin: 4px;
+  /* margin: 4px; */
 }
 
 button:hover,

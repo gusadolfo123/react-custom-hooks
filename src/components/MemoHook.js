@@ -15,7 +15,7 @@ export const MemoHook = () => {
         Counter: <Small value={state} />
       </p>
 
-      <p>{ memoProcesoPesado }</p>
+      <p>{memoProcesoPesado}</p>
 
       <button
         onClick={() => {

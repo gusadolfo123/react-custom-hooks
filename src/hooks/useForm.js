@@ -12,5 +12,9 @@ export const UseForm = (initialState = {}) => {
     console.log(values);
   };
 
-  return [values, handlerInputChange, handlerSubmit];
+  const resetForm = () => {
+    setValues(initialState);
+  };
+
+  return [values, handlerInputChange, resetForm];
 };
