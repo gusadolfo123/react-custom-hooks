@@ -7,10 +7,10 @@ export const UseForm = (initialState = {}) => {
     setValues({ ...values, [target.name]: target.value });
   };
 
-  const handlerSubmit = (e) => {
-    e.preventDefault();
-    console.log(values);
-  };
+  // const handlerSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log(values);
+  // };
 
   const resetForm = () => {
     setValues(initialState);
