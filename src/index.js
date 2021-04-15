@@ -3,6 +3,6 @@ import ReactDOM from "react-dom";
 
 import "./components/myStyles.css";
 import "./index.css";
-import { TODOApp } from "./components/TODOApp.jsx";
+import { MainApp } from "./components/useContext/MainApp";
 
-ReactDOM.render(<TODOApp />, document.getElementById("root"));
+ReactDOM.render(<MainApp />, document.getElementById("root"));
